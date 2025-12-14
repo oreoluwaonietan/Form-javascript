@@ -42,9 +42,12 @@ if(passwordconfirm == null){
 //Age
 let age = prompt ("insert your age")
 while (age <= 17){
-    age = alert ("You Can't register,You are Under age ")
+    age = alert ("You cannot register,You are Underage ")
 }
 
+if (age >= 18){
+    age = alert("Registration Successful!!")
+}
 if(age == null){
     return
 }
